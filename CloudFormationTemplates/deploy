@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "== deploy  with CFN"
+
+# Variables
+STACK_NAME="Athena-Workshop"
+TEMPLATE_FILE="Athena-Workshop.yaml"
+
+
+aws cloudformation deploy \
+  --template-file $TEMPLATE_FILE \
+  --stack-name $STACK_NAME \
+  --capabilities CAPABILITY_NAMED_IAM \
