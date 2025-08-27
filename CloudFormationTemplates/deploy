@@ -2,11 +2,11 @@
 echo "== deploy  with CFN"
 
 # Variables
-STACK_NAME="Athena-Workshop"
-TEMPLATE_FILE="Athena-Workshop.yaml"
+STACK_NAME="Athena-Federation-Workshop"
+TEMPLATE_FILE="Athena-Federation-Workshop.yaml"
 
 
 aws cloudformation deploy \
   --template-file $TEMPLATE_FILE \
   --stack-name $STACK_NAME \
-  --capabilities CAPABILITY_NAMED_IAM \
+  --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND

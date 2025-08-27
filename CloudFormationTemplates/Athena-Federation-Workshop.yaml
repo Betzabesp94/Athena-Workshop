@@ -70,7 +70,7 @@ Resources:
       WorkGroupConfiguration:
         EnforceWorkGroupConfiguration: true
         EngineVersion:
-         SelectedEngineVersion: Athena engine version 3				
+         SelectedEngineVersion: "Athena engine version 3"
         PublishCloudWatchMetricsEnabled: true
         ResultConfiguration:
           OutputLocation: !Join [ "", ["s3://" , Ref: S3Bucket, "/"]]
