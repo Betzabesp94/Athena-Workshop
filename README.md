@@ -15,8 +15,7 @@ Depending on the expertice level you can follow 3 diferent stacks:
 ### Errors 
 Some saved queries on the Athena Federation Workshop using "lambda:hbase".default.lineitem failed, an example of the error might look like this:
 
-
-````
+```
 GENERIC_USER_ERROR: Encountered an exception[java.lang.RuntimeException] from your LambdaFunction[hbase] executed in context[retrieving meta-data] with message[org.apache.hadoop.hbase.client.RetriesExhaustedException: Can't get the location for replica 0]
 This query ran against the "default" database, unless qualified by the query. Please post the error message on our forum  or contact customer support  with Query Id: 321...examplequeryid
 ```
